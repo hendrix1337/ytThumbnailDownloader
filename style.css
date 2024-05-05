@@ -4,13 +4,39 @@
     }
   }
 
+header img,
+header h4 {
+      display: inline-block;
+      vertical-align: middle; 
+  }
+  .main-footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-footer img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 80px; /* Adjust width if needed */
+    height: 80px; /* Adjust height if needed */
+}
+
+.main-footer a {
+    text-decoration: none;
+    color: black; /* Adjust color if needed */
+}
+
+
 body, html {
     height: 100%;
     display: grid;
   }
   
 body {
-    background-image: linear-gradient(45deg, #1b3c33, #195156);
+    background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
     
 }
 

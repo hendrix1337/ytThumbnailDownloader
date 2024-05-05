@@ -21,15 +21,16 @@
 <body>
     <div class="main fw-light">
         <header>
-            <h4 class="display-6 lh-1 text-white">🖼 Get YouTube Thumbnail</h4>
+            <img src="img/vertlogo.png" id="main-logo" width="75px" height="75px">
+            <h4 class="display-6 lh-1 text-white"> Get YouTube Thumbnail</h4>   
         </header>
         <hr>
         <label for="url" class="form-label small text-white">Enter YouTube video URL (supports .be, shorts, embed, with timestamps
             and other clutter)</label>
         <input name="url" type="search" id="url" class="form-control fw-light"
-            onfocus="if(this.value == 'https://www.youtube.com/watch?v=k8mOAV0KJLE') { this.value = ''; }"
-            onblur="if(this.value == '') { this.value = 'https://www.youtube.com/watch?v=k8mOAV0KJLE'; }"
-            value="https://www.youtube.com/watch?v=k8mOAV0KJLE" />
+            onfocus="if(this.value == 'enter your url here') { this.value = ''; }"
+            onblur="if(this.value == '') { this.value = 'enter your url here'; }"
+            value="enter your url here" />
         <div class="buttons">
             <button class="btn btn-primary fw-light" onclick="dynamicUrl(0)">👁‍🗨 Get 🖼</button>
             <button class="btn btn-info fw-light" onclick="dynamicUrl(1)">👀 Get Max 🖼</button>
@@ -39,8 +40,9 @@
 
         <img class="center-fit" id="img" onclick="fullPage()" title="Click to zoom in/out"
             src="https://img.youtube.com/vi/k8mOAV0KJLE/maxresdefault.jpg" />
-        <footer>
-            <a class="text-decoration-none" href="enter github" target="_blank"> @Developergtm.in</a>
+        <footer class="main-footer">
+            <img src="img/horiLogo.png" id="footer-logo">
+            <a class="text-decoration-none" href="https://github.com/hendrix1337/ytThumbnailDownloader" target="_blank">Developed by Leandro Leka, Mateo Hysa and Anxhelo Belegu</a>
         </footer>
     </div>
     <div id="fullpage" title="Click to zoom in/out" onclick="this.style.display='none';"></div>
